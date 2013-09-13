@@ -1,0 +1,223 @@
+/*
+Author: Ian Fajardo
+Website: http://www.hidden-machine.com;
+Name: style.css
+Version: 1.0;
+*/
+
+/* Table of Contents
+==============================
+#Basic Styles
+#Typography
+#Button
+
+==============================
+*/
+
+@font-face {
+    font-family: 'bebasregular';
+    src: url('assets/fonts/BEBAS___-webfont.eot');
+    src: url('assets/fonts/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/BEBAS___-webfont.woff') format('woff'),
+         url('assets/fonts/BEBAS___-webfont.ttf') format('truetype'),
+         url('assets/fonts/BEBAS___-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amblelight';
+    src: url('assets/fonts/Amble-Light-webfont.eot');
+    src: url('assets/fonts/Amble-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/Amble-Light-webfont.woff') format('woff'),
+         url('assets/fonts/Amble-Light-webfont.ttf') format('truetype'),
+         url('assets/fonts/Amble-Light-webfont.svg#amblelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ambleregular';
+    src: url('assets/fonts/Amble-Regular-webfont.eot');
+    src: url('assets/fonts/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/Amble-Regular-webfont.woff') format('woff'),
+         url('assets/fonts/Amble-Regular-webfont.ttf') format('truetype'),
+         url('assets/fonts/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    font-family: 'amblelight', helvetica, arial, sans-serif;
+    font-size: 16px;
+    background-color: #fff
+}
+
+html, body{
+    height: 100%;
+} 
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "bebasregular", helvetica, arial, sans-serif; 
+	color: #353535;
+}
+
+.top-nav{
+    min-height: 40px;
+}
+
+.top-nav ul{
+    height: 40px;
+}
+
+.top-nav li{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    min-width: 120px;
+    height: 40px;
+    float: left;
+    overflow: hidden;
+}
+
+.top-nav a{
+    color: #353535;
+    text-align: center;
+    line-height: 40px;
+}
+
+.masthead{
+    background: url('assets/img/mast-bg.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-height: 440px;
+    padding-bottom: 180px;
+    text-align: center;
+}
+
+.masthead .container{
+    text-align: center;
+}
+
+.masthead h1{
+    font-size: 4.375em;
+    margin: 0;
+    color: #353535;
+}
+
+.wrapper{
+    height: auto;
+    text-align: center;
+}
+
+.wrapper, .headline, .wrapper img{
+    display: inline-block;
+}
+
+.headline{
+    text-align: left;
+    vertical-align: middle;
+}
+
+.portfolio{
+    background-color: #353535;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.portfolio  h2{
+    color: #fff;
+}
+
+.title{
+    background: url('assets/img/title1.jpg');
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+
+.title h1{
+    color: #fff;
+    font-size: 100px;
+    padding: 70px 0;
+}
+
+.green{
+    color: #67CCA1;
+    display: inline-block;
+}
+
+.blue{
+    color: #00B4FF;
+    display: inline-block;
+}
+
+.red{
+    color: #F9505B;
+    display: inline-block;
+}
+
+/*  Instafeed Styles
+    Author: Manik Rathee
+    =================================================== */
+    #instafeed{
+        overflow:hidden;
+        zoom:1;
+        margin:20px auto;
+        width:300px;
+        max-width:100%;
+        -webkit-transition:width 1s ease-in-out,margin .25s ease-in-out;-moz-transition:width 1s ease-in-out,margin .25s ease-in-out;transition:width 1s ease-in-out,margin .25s ease-in-out}
+    #instafeed a{float:left;}
+
+    #instafeed a:hover img{-webkit-transform:scale .8;transform:scale .8}
+    #instafeed img{width:100%;max-width:100%}
+
+    @media screen and (min-width:768px){
+        #instafeed{width:600px}
+        #instafeed a{display:block;width:300px}
+    }
+    @media screen and (min-width:992px){#instafeed{width:800px}#instafeed a{width:190px}}
+    @media screen and (min-width:1200px){#instafeed{width:100%;}}
+
+/* Custom Media Queries
+    ===============================================*/
+
+    @media screen and (max-width: 1200px){
+        .wrapper{
+            text-align: center;
+        }
+        .wrapper, .headline{
+            text-align: center;
+        }
+        
+    }
+
+    @media screen and (max-width: 992px){
+        .headline{
+            height: auto;
+        }
+        .masthead h1{
+            font-size: 3.75em;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        .masthead h1{
+            font-size: 3.125em;
+        }
+    }    
+
+    @media screen and (max-width: 480px){
+        .masthead h1{
+            font-size: 2.4em;
+        }
+        .wrapper img{
+            width: 150px;
+            height: 150px;
+        }
+    }
