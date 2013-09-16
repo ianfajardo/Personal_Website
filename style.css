@@ -66,21 +66,24 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .top-nav{
-    min-height: 40px;
+    height: 40px;
+    display: block;
+    position: relative;
+    float: right !important;
 }
 
 .top-nav ul{
     height: 40px;
+    list-style: none;
+    text-align: center;
 }
 
 .top-nav li{
-    display: inline-block;
+    display: inline;
     text-decoration: none;
     text-align: center;
-    min-width: 120px;
     height: 40px;
-    float: left;
-    overflow: hidden;
+    padding: 0 40px;
 }
 
 .top-nav a{
@@ -95,6 +98,7 @@ h1,h2,h3,h4,h5,h6{
     background-repeat: no-repeat;
     min-height: 440px;
     padding-bottom: 180px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -122,13 +126,38 @@ h1,h2,h3,h4,h5,h6{
     vertical-align: middle;
 }
 
-.portfolio{
-    background-color: #353535;
+.portfolio, .photos, .contact{
     color: #fff;
-    padding: 40px 0;
+    padding: 20px 0px 40px 0px;
 }
 
-.portfolio  h2{
+.footer{
+    padding: 20px 0px 40px;
+    background-color: #353535;
+    color: #fff;
+}
+
+.info{
+        padding: 20px 0px 40px 0px;
+}
+
+.portfolio, .contact{
+    background-color: #353535; 
+}
+
+.photos{
+    background-color: #67CCA1;
+}
+
+.info{
+    background-color: #fff;
+}
+
+.contact{
+    background-color: #353535;
+}
+
+.portfolio h2, .photos h2{
     color: #fff;
 }
 
@@ -160,6 +189,12 @@ h1,h2,h3,h4,h5,h6{
 .red{
     color: #F9505B;
     display: inline-block;
+}
+
+.info h2{
+    border-top: solid 1px #bebebe;
+    border-bottom: solid 1px #bebebe;
+    padding: 10px 0;
 }
 
 /*  Instafeed Styles
@@ -204,6 +239,29 @@ h1,h2,h3,h4,h5,h6{
         .masthead h1{
             font-size: 3.75em;
         }
+        .top-nav{
+            float: none !important;
+            height: auto;
+            clear: both;
+            width: 100%;
+        }
+        .top-nav ul{
+            height: auto;
+            display: block;
+            width: 100%;
+        }
+        .top-nav li{
+            width: 50%;
+            position: relative;
+            text-align: left;
+            float: left;
+            padding: 0;
+        }
+        .top-nav a{
+            text-align: left;
+            width: 100%;
+        }
+        
     }
 
     @media screen and (max-width: 768px){
@@ -214,7 +272,7 @@ h1,h2,h3,h4,h5,h6{
 
     @media screen and (max-width: 480px){
         .masthead h1{
-            font-size: 2.4em;
+            font-size: 2.5em;
         }
         .wrapper img{
             width: 150px;
