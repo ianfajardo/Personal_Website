@@ -1,3 +1,5 @@
+
+
 var userFeed = new Instafeed({
         get: 'user',
         userId: 250624561,
@@ -7,3 +9,7 @@ var userFeed = new Instafeed({
         sortBy: 'most-liked'
     });
     userFeed.run();
+
+$(function() {
+				Grid.init();
+			});

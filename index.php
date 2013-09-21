@@ -19,8 +19,8 @@
 		<div class="container">
 			<nav class="top-nav">
 				<ul>
-					<li><a href="">Portfolio</a></li>
-					<li><a href="">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#info">About</a></li>
 					<li><a href="">Resume</a></li>
 					<li><a href="">Contact</a></li>
 				</ul>
@@ -33,30 +33,41 @@
 						<img src="assets/img/logo.png">
 						<div class="headline">
 							<h1>I make <div class="green">ideas</div> come to <div class="blue">life.</div></h1>
-							<h1>I am <div class="red">Ian Fajardo.</div></h1>
+							<h1>I am <div class="red">Ian &nbsp Fajardo.</div></h1>
 						</div>
 					</div>
 				
 			</div>
 		</div>
 
-		<div class="portfolio">
+		<div id="portfolio" class="portfolio">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
+
 						<h2>Portfolio</h2>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum libero dui, non tempor lectus ornare vel. Nullam aliquam ligula in libero sollicitudin fermentum. Aenean mollis eu turpis nec condimentum. Nullam ultrices urna id tellus ornare, quis varius sem elementum. Vestibulum tempus libero velit, nec congue leo pharetra dictum. Vivamus id lectus felis. Suspendisse potenti. Fusce mollis odio ac diam blandit rhoncus. Etiam in lacinia purus, in feugiat enim. Fusce blandit id sapien non sollicitudin. Aliquam ac pellentesque lacus, ac sodales purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-					</div>
-				</div>
+							<ul id="og-grid" class="og-grid">
+								<li>
+									<a href="http://www.hidden-machine.com" data-largesrc="assets/img/hmsite-large.jpg" data-title="Hidden-Machine Blog" data-description="Hidden Machine is primarily a website for technology, film, and music articles.  I designed and developed the entire website using the Skeleton framework and Wordpress.  I maintain and blog on this website frequently and update the pages regularly.">
+										<img src="assets/img/hmsite.jpg" alt="HiddenMachine">
+									</a>
+								</li>
+								<li>
+									<a href="http://www.oyfaatuva.com" data-largesrc="assets/img/oyfasite-large.jpg" data-title="Organization of Young Filipino Americans" data-description="Created this website from the ground up.  This was my first time using Twitter Bootstrap for a framework, and heavily used it throughout the website.  As the webmaster, I updated the officer biography sections and updated different parts of the site according to the needs of the organization.  Implemented pages of the website include: a merchandise store, blog, donation page, and officer biographies. ">
+										<img src="assets/img/oyfasite.jpg" alt="OYFA"/>
+									</a>
+
+								</li>
+								
+							</ul>
+
 			</div>
 		</div>
-		<div class="info">
+		<div id="info" class="info">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-sm-4">
 						<div style="text-align: center">
 							<h2>About</h2>
-							<img src="assets/img/mypic.jpg">
+							<img id="mypic" src="assets/img/mypic.jpg">
 							<h3>ARIEL-IAN &nbsp FAJARDO</h3>
 							<h4>DEVELOPER + DESIGNER</h4>
 							<h5>University of Virginia // B.S. in Computer Science //2013 </h5>
@@ -90,21 +101,9 @@
 
 		<script src="assets/js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="assets/js/instafeed.min.js"></script>
-		<script type="text/javascript" src="assets/js/init.js"></script>
-		<script type="text/javascript">
-			/* 
-			*	We would normally recommend that all JavaScript is kept in a seperate .js file,
-			* 	but we have included it in the document head for convenience.
-			*/
-			
-			// INSTANTIATE MIXITUP
-		
-			$(function(){
-     
-			    $('#Grid').mixitup();
-			     
-			});
-			
-		</script>
+		<script type="text/javascript" src="assets/js/init.js"></script>		
+		<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="assets/js/og-grid.js"></script>
+
 	</body>
 </html>
